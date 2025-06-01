@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Redirect to home if user is already logged in
+// Redirect to home 
 if (isset($_SESSION['user_id'])) {
     header("Location: home.php");
     exit();
@@ -68,17 +68,5 @@ if (isset($_SESSION['user_id'])) {
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to XPay</h1>
-        <form action="login.php" method="get">
-            <button class="button" type="submit">Login</button>
-        </form>
-        <form action="register.php" method="get">
-            <button class="button" type="submit">Register</button>
-        </form>
-        <div class="footer">
-            &copy; <?php echo date("Y"); ?> XPay. All rights reserved.
-        </div>
-    </div>
-</body>
+   
 </html>
